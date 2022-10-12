@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resumo codigos</title>
+    
+</head>
+<body>
+    <a href="index.html" rel="prev" type="">Página 1</a>
+    <h1>Resumos Códigos e Praticas </h1>
+    <hr>
+    <h2><ins>Códigos base de HTML e CSS</ins></h2>
+    <h3><ins>Conteúdo em HTML</ins></h3>
+            <img src="imagens/conteudohtml500.png" alt="conteudo html">
+        <h4>Legenda</h4>
+            <ul>
+                <li><strong>&lt;h1&gt; &lt;/h1&gt;</strong> - Título ou Cabeçario</li>
+                <li><strong>&lt;p&gt; &lt;/p&gt;</strong> - Parágrafo</li>
+                <li><strong>src</strong> - Source (Origem)</li>
+                <li><strong>img</strong> - Imagem</li>
+                <li><strong>alt</strong> - Texto alternativo (se a imagem nao aparece, aparece o texto escrito em alt=)</li>
+                <li><strong></strong></li>
+            </ul>
+            
+        <h3><ins>Estilo em CSS</ins></h3>
+                <img src="imagens/estiloemccss500.png" alt="estilo em css">
+                <p>Geralmente fica dentro da tag <strong>&lt;style&gt;</strong> em HTML. Dentro de seletores tem declarações e toda declaração é um par de propriedade e valor.</p>
+            
+        <h3><ins>Estrutura Básica de documento HTML</ins></h3>
+                <p> Passe o mouse em cima de cada tag e linha de código abaixo para saber oque cada uma representa ou faz. 
+                    <pre><code> 
+    <strong>
+    <abbr title="Tag especifica p/ dizer que está em HTML5">&lt;!DOCTYPE html&gt;</abbr>
+    <abbr title="Tag html> abertura do código e lang conta que o conteudo está em portugues ou outra linguagem">&lt;html lang="pt-br"&gt;</abbr>
+    .
+    .   <abbr title="Área de configuração">&lt;head&gt;</abbr>
+    .   .    <abbr title="Deixa o Site compativel com acentos">&lt;meta charset="UTF-8"&gt;</abbr>
+    .   .     <abbr title="Site ocupa 100% da tela, Tela branca e deixa a escala 100% sem zoom">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</abbr>
+    .   .     <abbr title="Título do site, aparece em cima na guia">&lt;title>RESUMO Exercicios 01 e 02&lt;/title&gt;</abbr>
+    .    &lt;/head&gt;
+    .    
+    .    <abbr title="Conteúdo do site">&lt;body&gt;</abbr>
+    .    .   &lt;h1&gt; Olá Mundo! &lt;/h1&gt; 
+    .    .
+    .    &lt;/body&gt;
+    &lt;html&gt;
+    </strong>
+            </p></code></pre>
+            
+    <h4><ins>Legenda de Tags</ins></h4>
+    <ul>
+        <li><strong><ins>&lt;!DOCTYPE html&gt;</ins></strong></li>
+        <p>Tag especifica p/ indicar que está em HTML5</p>
+        <li><strong><ins>&lt;html&gt;</ins></strong></li>
+            <p>Tag de abertura do código</p>
+        <li><strong><ins>&lt;head&gt;</ins></strong></li>
+            <p>Tag e Área de configuraçao do código</p>
+        <li><strong><ins>title</ins></strong></li>
+            <p>Título do site, aparece em cima na guia</p>
+        <li><strong><ins>&lt;body&gt;</ins></strong></li>
+            <p>Corpo do site, parte onde o conteúdo fica</p>
+    </ul>
+
+        <hr>
+    <!-- TEXTO SOBRE CABECARIO-->
+    <h2>  Cabeçario (Head)</h2> 
+        <p> (usa-se as tags <strong> &lt;h1&gt; e &lt;/h&gt; </strong> para faze-lo no código).        
+            </p>
+    <hr>
+    <!--TEXTO SOBRE PARAGRAFO-->
+    <h2>Parágrafos</h2>
+        <p> Este é o parágrafo <br> (usa-se as tags <strong> &lt;p&gt; e &lt;/p&gt; </strong> para faze-la no  código.) 
+        </p>
+    <hr>
+    <!--TEXTO SOBRE CARACTERES-->
+    <h2>Caracteres especiais (Entities) </h2>
+        <p> Alguns simbolos são colocados no código de forma diferente das letras, usando a tecla do teclado. Para resolver esse problema temos no HTML o que chamamos de entities (entidades em português), que são "códigos" que digitados no HTML representam os simbolos que saem escritos no texto do site. 
+        <br>
+        (É utilizado " <strong>&</strong> ", a abreviação do simbolo no HTML e " <strong>;</strong> " no final.)
+        <br></p><strong>&emsp; 
+        Exemplo:
+        <br> &emsp;&emsp; &amp;reg&semi; = &reg; <br> &emsp;&emsp; &amp;copy&semi; = &copy;
+        <br> &emsp;&emsp; &amp;trade&semi; = &trade;
+        <br> &emsp;&emsp; &amp;euro&semi; = &euro; 
+        <br> &emsp;&emsp; &amp;pound&semi; = &pound;
+        <br> &emsp;&emsp; &amp;yen&semi; = &yen;
+        <br> &emsp;&emsp; &amp;cent&semi; = &cent;     </strong>
+        </p>
+    <hr>
+    <!--EMOJIS-->
+    <h2>Emojis em HTML &#x1F4C3;</h2>
+        <p>Para adicionar um emoji em HTML é parecido com os caracteres especiais, com a estrutura: 
+        <strong> &amp;#x1F4C3&semi; </strong> onde "<strong> &#x </strong>" é do HTML e "<strong> x1F4C3 </strong> é o "código" de identificação do emoji. Para encontrar esse código acesse o site   escolha um emoji e clique nele, na parte de baixo da pagina você encontrará o tópico <strong>Codepoints</strong> , abaixo dele tem a identificação como por exemplo: "<strong>U+1F4C3</strong>" porém usaremos apenas a parte depois do sinal + que no caso seria "<strong> x1F4C3 </strong>".
+        <br><br>
+        &emsp; <strong>Exemplo:
+        <br>&emsp;&emsp; &amp;#x1F4C3&semi; = &#x1F4C3;
+        <br>&emsp;&emsp; &amp;#x1f596&semi; = &#x1f596;
+        <br>&emsp;&emsp; &amp;#x1f47d&semi; = &#x1f47d;
+        <br>&emsp;&emsp; &amp;#x1f913&semi; = &#x1f913;
+        <br>&emsp;&emsp; &amp;#x1F3F0&semi; =  &#x1F3F0; 
+        <br>&emsp;&emsp; &amp;#x1F48E&semi;  = &#x1F48E;
+        <br>&emsp;&emsp; &amp;#x1F432&semi; =  &#x1F432; 
+        <br>&emsp;&emsp; &amp;#x1F9D9&semi;  = &#x1F9D9;
+            </strong>            
+        </p>
+        <hr>
+        <!--TEXTO SOBRE IMAGENS E DIREITOS-->
+        <h2>Imagens e Direitos Autorais</h2>
+        <h3><ins>Você tem o direito de usar qualquer imagem?</ins></h3>
+            <p>Temos que ter cuidado ao pegar imagens na internet, pois aglumas podem ter direitos autorais, e os autores podem lhe processar e ate pegar qualquer lucro q você teve usando sua imagem. Devemos sempre buscar no google imagens com o filtro de direitos de uso, para isso tambem temos sites com imagens grates sem direitos autorais.</p>
+            <ul>
+                <li><a href="https://unsplash.com" target="_blank" rel="external"><strong>Unsplash</strong></a> </li>
+                <li><strong><a href="https://www.pexels.com/pt-br/" target="_blank" rel="external">Pexels</a></strong></li>
+                <li><a href="https://br.freepik.com/"><strong>Freepik</strong></a></li>
+                <li><a href="https://pixabay.com/pt/"><strong>Pixabay</strong></a></li>
+            </ul>
+    <h3><ins>Tipos de Arquivos de Imagens</ins></h3>
+        <ul>
+            <li>JPEG - Arquivo de alta compactação  que nao suporta transparência</li>
+            <li>GIF - Arquivo com imagem de baixa qualidade e permite animações </li>
+            <li>PNG - Criado para substituir o gif, compacta a imagem porem menos q o JPEG e permite transparencia, mas nao permite animação </li>
+        </ul>
+    <h3><ins>Tamanho de imagens p/ site</ins></h3>
+        <p>É ideal deixar o tamanho ideal de uma imagem pois, arquivos muito grandes geram travamentos no site, e podem encarecer o preço da sua hospedagem.</p>    
+    <ul>
+            <li>Resolução - 50 a 75 </li>
+            <li>Tamanho - 1500 (max), 1200(grande), 650 (pequeno) </li>
+            <li>Exportação - qualidade 70%</li>
+        </ul>
+        </ul>
+    <h3><ins>Inserir Imagem no HTML</ins></h3>
+    <h4><ins>Linha p/ Carregar Imagemno HTML</ins></h4>
+        <p><code><strong>&lt;img src="imagens/logocss"alt="texto alternativo"&gt;</strong> </code></p>
+    <h4><ins>Imagem em subpasta</ins></h4>
+            <p>Cria uma pasta dentro da pasta do codigo</p>
+            <code><strong>&lt;img src="imagens/logocss" alt="texto alternativo&gt;</strong></code>
+    <h4><ins>Imagem em outro site</ins></h4>
+        <p>Após buscar uma imagem na internet clique sobre ela com o botao direito do mouse e copiar edereço da imagem.</p>
+    <code><strong>&lt;img src="link.da.imagem" alt ="texto alternativo"&gt;</strong></code>
+    <hr>
+    <!--TEXTO SOBRE FAVICON-->
+    <h2>Como mudar icone da guia do site (favicon)</h2>
+    <p>Busque um icone ( <a href="iconarquive.com" target="_blank" rel="external">iconarquive</a> ), crie um icone(imagem com formato .ico) ou desenhe um icone para você.(<a href="favicon.cc" target="_blank" rel="external">favicon.cc</a>).</p>
+    <h3><ins>Inserir Favicon</ins></h3>
+        <p>Digite link, e selecione link:favicon no menu para criar a linha de codigo padrão do favicon. </p>
+        <code>
+            <strong>&lt;link rel="shortcut icon" href="favicon.ico" type="image/x-icon"&GT;</strong>
+        </code>
+    <hr>
+    <!--TEXTO SOBRE HIERARQUIA DE TITULOS-->
+    <h2>Hierarquia de Titulos</h2> 
+        <p>É importante sabermos que o numero da Tag &lt;h&gt; nao representa tamanho, mas sim sua ordem na hierarquia, e o tamanho dos textos sao alterados no CSS e não na tag &lt;h&gt;.</p>
+        <ul>
+            <li><strong>&lt;h1&gt; &lt;h1&gt;</strong> - Primeiro da hierarquia</li>
+            <li><strong>&lt;h2&gt; &lt;h2&gt;</strong> - Segundo da hierarquia</li>
+            <li><strong>&lt;h3&gt; &lt;h3&gt;</strong> - Terceiro da hierarquia</li>
+            <li><strong>&lt;h4&gt; &lt;h4&gt;</strong> - Quarto da hierarquia</li>
+            <li><strong>&lt;h5&gt; &lt;h5&gt; </strong>- Quinto da hierarquia</li>
+            <li><strong>&lt;h6&gt; &lt;h6&gt;</strong> - Ultimo da hierarquia</li>
+        </ul>
+        <hr>
+        <!--TEXTOS SOBRE TAGS OBSOLETAS-->
+    <h2>Tags Obsoletas</h2>
+        <p>Cuidado! algumas tags obsoletas estão em desuso, mesmo funcionando não use pois a qualquer momento pode parar de funcionar e será rejeitada no html e pode lhe prejudicar. </p>
+        <ul>
+            <li><ins><strong>Algumas Tags obsoletas</strong></ins></li>
+                <ul>
+                    <li><strong>&lt; colorbg &gt;</strong> - Cor de fundo</li>
+                    <li><strong>&lt; marquee &gt;
+                    </strong> - Marcador de texto</strong></li>
+                    <li><strong>&lt; b &gt;</strong> - Negrito</li>
+                    <li><strong>&lt; i &gt;</strong> - Itálico</li>   
+                    
+                </ul>
+        </ul>
+        Logo devemos usar tags que tenham semantica que significa dar importancia ao segnificado e não a forma.
+            <ul>
+                <li><ins><strong>Algumas Tags com sematica que tem mesma funçao que tags obsoletas</strong></ins></li>
+                    <ul>
+                        <li> &lt; <strong>strong</strong> &gt; - Negrito</li>
+                        <li> <strong>&lt; em &gt;</strong> - Itálico</li>
+                        <li><strong> &lt; mark &gt;
+                        </strong> - Marca texto</li>
+                    </ul>
+            </ul>
+    <hr>
+    <!--TEXTO SOBRE FORMATAÇÕES-->
+    <h2>Formatações de texto</h2>
+    <h3><ins>Principais Formatações</ins></h3>
+    <ul>
+        <li>
+            <h4><ins>Negrito (Destaque)</ins></h4>
+                <p>Nesta frase temos um <strong>termo negrito</strong> usando a tag <strong>&lt; strong &gt;</strong></p>
+        </li>
+        <li>
+            <h4><ins>Itálico (Destaque)</ins></h4>
+                <p>Nesta frase temo um <em>termo em itálico</em> usando a Tag <strong> &lt; em &gt;</strong></p>
+        </li>
+        <li>
+            <h4><ins>Sublinhado ou Inserido</ins></h4>
+                    <p>Nesta frase temos um <ins>texto inserido</ins> usando a tag <strong> &lt; ins &gt;</strong></p>
+        </li>
+    </ul>
+            
+    <h3><ins>Formatações Adicionais</ins></h3>
+        <ul>
+            <li><h4><ins>Texto Marcado</ins></h4></li>
+                <p>Podemos cria um <mark>texto marcado</mark> usando a tag <strong> &lt; mark &gt;</strong> </p>
+                <ul>
+                    <li><ins><strong>Mudar Cor do mark solo</strong></ins></li>
+                    <p><mark style="background-color: greenyellow">
+                            &lt; mark style=background-color: greenyellow&gt; texto &lt;/mark&gt;
+                        </mark></p>
+                    
+                        <li><strong><ins>Mudar cor de todos os marks</ins></strong>
+                    </li>
+                        <p>
+                            <pre><code> 
+<strong>&lt;head&gt;
+    &lt;style&gt;
+                mark{
+                background-color limegreen;
+                }
+    &lt;/style&gt;
+&lt;/head&gt;  </strong>          
+                            </code></pre>
+                        </p>
+                </ul>
+                    <li><h3><ins>Texto Pequeno</ins></h3></li>
+                        <p>Podemos deixar um <small>texto pequeno</small> usando a tag <strong> &lt; small &gt;</strong></p>
+                    <li><h3><ins>Texto Deletado</ins></h3></li>
+                        <p>Podemos marcar um <del>texto deletado</del> usando a tag <strong>&lt; del &gt;</strong></p>
+                    <li><h3><ins>Texto Sobrescrito</ins></h3></li>
+                        <p>Para escrever coisas do tipo x<strong><sup>20</sup></strong>+3.   <br>
+                        Sobrescrito:     
+                    <q><sup><strong> 20 </strong></sup</q></p>
+                        <li><h3><ins>Texto Subescrito</ins></h3></li>
+                        <p>Para escrever coisas do tipo H<strong><sub>2</sub></strong>O.   <br>
+                            Subescrito:     
+                        <q><sub><strong> 2 </strong></sub></q></p>
+                    <li><h3><ins>Texto invertido</ins></h3></li>
+                            <p><strong>&lt;bdo&gt;</strong> bdo significa bi-direcional overide, ao usae a tag devemos usae o parametro <strong>dir</strong> para indicar a direção que você quer que o texto fique invertido. 
+                            <p><strong>rtl=</strong> da direita para esquerda e <strong>ltr=</strong> esquerda para direita
+                                <pre><code><strong>&lt;bdo dir= rtl&gt;invertido&lt;/bdo&gt;</strong></code>
+                                </pre>
+                                sai: <bdo dir="rtl"><strong>invertido</strong></bdo>
+                            </p>
+                            
+                            </p>
+                    <li><h3><ins>Trechos de Código</ins></h3></li>     
+                        <p>A tag <strong>&lt; code &gt;</strong> é semantica e indica que o que está dentro dela se trata de um código, e muda o a estética do que esta dentro da tag oara facilitar a leitura do código. <br>
+                        <ul>
+                            <li><strong><ins>Exemplo usando a tag &lt;code&gt;:</ins></strong>:</li>
+                            <p>
+                                <code>
+                                    <strong>var1=int(input(f'digite um número
+                                                doblo= var1 * 2
+                                                print(f'o dobro de {var1} é {dobro})</strong>
+                                </code>
+                                
+                            </p> 
+                            <p>Como podemos ver a estetica das letras mudam e ficam monoespaçadas para facilitar nossa leitura, porém ela não fica indentada, em ordem como o codigo deveria está, para cobrir essa função existe a tag <strong>&lt; pre &gt;</strong>. <br> Devemos usar tag &lt; code &gt; dentro da tag &lt; pre &gt; para formatar o texto com espaçamentos e forma igual como esta escrita no nosso código HTML.
+                            </p>   
+                            
+                            <li><strong><ins>Exemplo da tag &lt; code &gt; englobada pela tag &lt; pre &gt;:</ins></strong> </li>
+                                <pre>
+                                    <strong><code>
+var1=int(input('digite um número: ')
+doblo= var1 * 2 
+print(f'o dobro de {var1} é {dobro})
+                                    </code></strong>
+                                </pre>
+
+                        
+                        </ul>
+                                     </p> 
+            </ul>
+        
+        <hr>
+    <!--TEXTO SOBRE CITAÇOES-->            
+    <h2>Citações</h2>
+    <h3><ins>Citações em linha</ins></h3>
+    <p>Usa-se a tag <strong>&lt;q&gt;</strong> (quote - citação em inglês) para fazer uma citação entre aspas.</p>
+    <p>Ex: <strong>&lt;q&gt; mais ou menos&lt;/q&gt; sai : <q>mais ou menos</q></strong></p>
+    <h3><ins>Citacões em bloco</ins></h2>
+    <p>Com a tag <strong>&lt;blockquote&gt;</strong> temos uma citação mais longa em bloco que tem um parágrafo só para essa tag. O texto ganha um recui automáticamente e podemos tambem por um link para o texto oriiginal usando o parâmetro <strong>cite</strong> dentro da tag.</p>
+    <p>Ex: <pre>
+        <code><strong>
+            &lt;blockquote cite= "https://www.youtube.com/"&gt;
+                            o PHP é uma linguagem  para a criação [...]
+            &lt;/blockquote&gt;</strong>
+        </code>
+    </pre>
+    sai: <blockquote cite="https://www.youtube.com/">
+        o Php é uma linguagem para a criação [...]
+    </blockquote> </p> <hr>
+    
+    <!--TEXTO SOBRE ABREVIAÇOES--> 
+    <h2>Abreviações</h2>
+    <p>Sempre que quiser escrever uam sigla mas deixar claro ao usário e aos mecanismo de buscas o siguinificado dela use a tag &lt;abbr&gt; e o parametro <strong>title</strong> para que quando por o mouse em cima da abreviação ou da palavra apareça uma etiqueta com o significado ou o que você escreveu apareça nela.</p>
+    <p>Ex:  Eu estou estudando <strong>&lt;abbr tittle="Hyper Text Markup Language"</strong>&gt;HTML<strong>&lt;/abbr&gt;</strong> para criar sites 
+    </p>
+    <p>sai: Eu estou estudando <abbr title="Hyper Text Markup Language"><strong>HTML</strong></abbr> para criar sites.</p>
+    <hr>
+    
+    <!--TEXTO SOBRE LISTAS--> 
+    <h2>Listas</h2>
+    <h3><ins>Listas ordenadas (ordened list)</ins></h3>
+    <p>A lista ordenada é usada quando a ordem é importante como por exemplo uma lista de top 10 caros mais caros, nessa ocasião usamos a tag <strong>&lt;ol&gt;</strong> para demilitar a lista e <strong>&lt;li&gt; para identificar cada item da lista</strong>.</p>
+    <p>ex: 
+<pre><code><strong>&lt;ol&gt;</strong>
+    <strong>&lt;li&gt;</strong> item 1 <strong>&lt;/li&gt;</strong> (a tag <strong>&lt;/li&gt;</strong> é opcional pois nao precisa fechar a tag)
+    <strong>&lt;li&gt;</strong> item 2 <strong>&lt;/li&gt;</strong>
+    &lt;li&gt; item  3&lt;/li&gt;
+&lt;/ol&gt;
+    </code></pre>
+    fica:
+    <ol><li>item 1</li>
+    <li>item 2</li>
+<li>item 3</li></ol>
+            a tag <strong>&lt;/ol&gt; </strong>  possui o parametro <strong>type</strong> onde configuramos o  tipo de marcador da lista.
+        <ul><li><ins><strong>As configurações dos  parametros são:</strong></ins></li>
+                    <ol><li type="1"><strong>1-</strong>Valor padrão cria  listas numeradas (ex: 1, 2, 3, 4 ...)</li>
+                    <li type="A"><strong>A-</strong> Listas alfabéticas em maiúsculo (ex: A, B, C, D ...)</li>
+                    <li type="a"><strong>a</strong>- Listas alfabéticas minusculas (ex: a, b, c, d ...)</li>
+                    <li type="I"><strong>I-</strong>Lista em algarismo romano maiúsculo (ex: I, II, III, IV ...)</li>
+                    <li type="i"><strong>i-</strong> Lista em algarismo romano em minusculo (ex: i, ii, iii, iv)</li>
+                </ol>
+            </ul>
+    <p>Dentro da tag <strong>&lt;ol&gt;</strong> também podemos usar o  parametro <strong>start</strong> com o numero para indicar a partir de qual numero da ordem a lista vai começar (ex: 1,2,3 ...) <br>
+    ex:(usando dentro da tag o parametro  <strong>start="3"</strong> )</p>
+    <ol start="3">
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+    </ol>
+</p>
+    <h3><ins>Listas não ordenadas (unordened list)</ins></h3>
+    <p>Tambem chamada de listas com marcadores, ão usadas quando a ordem dos itens da lista não importam. Usamos a tag <strong>&lt;ul&gt;</strong>para demilitar a lista e a tag &lt;li&gt; para cada item.
+    </p>
+    <p>ex: 
+<pre><code>&lt;ul&gt;
+    &lt;li&gt; item 1
+    &lt;li&gt; item 2
+    &lt;li&gt; item 2 </code></pre></p>
+    <p>sai:
+        <ul><li>item 1</li>
+            <li>item2</li>
+            <li>item3</li>
+        </ul>
+    Parametro type para mudarmos o marcador
+        <ul>
+            <li type="disc"><strong>disc -</strong> Marcador padrão, bolinha preenchida</li>
+            <li type="circle"><strong>circle -</strong> Bolinha sem preenchimento</li>
+            <li type="square"><strong>square -</strong> quadrado preto preenchido</li>
+        </ul>
+    </p>
+    <h3>Listas ordenadas e de marcadores aninhadas </h3>
+    <p>Podemos tambem criar listas mistas, aninhando listas dentro de listas <br>
+        <ins><strong>ex:</strong></ins>
+<pre><code><strong>&lt;ol&gt;</strong>
+    <strong>&lt;li&gt;</strong> item 1 <strong>&lt;/li&gt;</strong>
+    <strong>&lt;li&gt;</strong> item 2 <strong>&lt;/li&gt;</strong>
+        <strong>&lt;ul type="square"&gt;</strong>
+            <strong>&lt;li&gt;</strong> item 2.1 <strong>&lt;/li&gt;</strong>
+            <strong>&lt;li&gt;</strong> item 2.2 <strong>&lt;/li&gt;</strong>
+            <strong>&lt;li&gt;</strong> item 2.3 <strong>&lt;/li&gt;</strong>
+        <strong>&lt;ul&gt;</strong> 
+    <strong>&lt;li&gt;</strong> item 3 <strong>&lt;/li&gt;</strong>
+    <strong>&lt;li&gt;</strong> item 4 <strong>&lt;/li&gt;</strong>
+    <strong>&lt;li&gt;</strong> item 1 <strong>&lt;/li&gt;</strong>  
+    </code></pre>
+     <strong>Resultado visual:</strong>
+     <ol>
+        <li>item 1</li>
+        <li>item 2</li>
+            <ul type="square" >
+                <li>item 2.1</li>
+                <li>item 2.2</li>
+                <li>item 2.3</li>
+            </ul>
+        <li>item 3</li>
+        <li>item 4</li>
+        <li>item 5</li>
+    
+    </ol>
+    Note que os itens da lista interna estão deslocado para direita em relação ao item 2, do qual essa sublista é filha.
+    </p></ul>
+    <hr>
+    <h2>Links</h2>
+    <p>Os hiperlinks permitem que você ligue um ponto ao outro  na Wolrd Wide Web. Toda vez que acessamos um site  e clicamos em um local para ir para outra ppágina , site ou ao baixar um arquico estamos interagindo com hiperlinks.</p>
+    <h3><ins>Links Externos</ins></h3>
+    <p>Para cria um hyper link usamos âncoras, e para criar uma usamos a tag <strong>&lt; a &gt;</strong>. O principal atributo da tag &lt;a&gt; é o <strong>href</strong> que cria uma referência hipertexto. <br>
+    <pre><code><strong>&lt; a href=</strong>"https://gustavoguanabara.github.io"&gt;Acesse o github do Gustavo Guanabara<strong>&lt;/a&gt;</strong> </code></pre>
+    <strong>Resultado:</strong>
+    <a href="https://gustavoguanabara.github.io" target="_blank">Acesse o github do Gustavo Guanabara</a>
+    </p>
+    <p>Outro atributo bem útil da tag ancora é o <strong>hreflang</strong> que avisa ao navegador  e softwares de tradução como lidar caso o visitante queria traduzir automaticamente o conteúdo: 
+        <pre><code><strong>&lt;a href=</strong>"https://www.w3schools.com/html/"<strong>hreflang=</strong>"en"&gt; Site da W3school em inglês&lt;/a&gt;</code></pre>
+    <strong>Resultado:</strong> 
+    <a href="https://w3schools.com/html/" hreflang="en" target="_blank">Site da W3school em inglês</a></p>
+    <h3><ins>Link interno</ins></h3>
+    <p>Chamamos de link interno  ou local  aquele link que leva o visitante para outra página dentro do nosso proprio site, nessa linha não é necessário nem por o url completo. <br>
+    <pre><code><strong>&lt;a href=</strong>"pagina1.html" <strong>target=</strong>"_self" <strong>rel=</strong>"prev"&gt; Voltar para página 1<strong>&lt;a/&gt;</strong></code></pre>
+    <strong>Resultado: <a href="index.html" target="_self" rel="prev">Voltar para página 1</a></strong> (funcionando)</p>
+    <p>Para controlar onde o site de destino vai abrir podemos usar o atributo <strong>target</strong>, que suporta os valores:
+    <ul>
+        <li><strong>_blank</strong> - Vai abrir o link em uma nova guia</li>
+        <li><strong>_self</strong> - Abre o link na mesma guia</li>
+    </ul>
+    Existe um recurso bem interessante  para o link que é indicar qual a natureza do destino usando o atributo <strong>rel</strong>, que aceita vários valores, por exemplo:
+    <ul>
+        <li><strong>next</strong> - Indica que o link é para a próxima parte do documento atual </li>
+        <li><strong>prev</strong> - Indica que o link é para a parte anterior do documento atual</li>
+        <li><strong>author</strong> - Indica que o link é para o site do autor do artigo atual </li>
+        <li><strong>external</strong> - Indica que o link é para outro site que não faz parte do atual</li>
+    </ul>
+    </p>
+    <h3><ins>Downloads</ins></h3>
+    <p>Para fazer um link de download basta fazer o link diretamente para o arquivo que deseja efetuar o download  e o atributo <strong>type</strong> para indicar qual o tipo de arquivo.
+    <pre><code>&lt;<strong>a href =</strong>"arquivos/Links- Gustavo guanabara.pdf" download="Links- Gustavo guanabara.pdf"
+<strong>type</strong>="application/pdf">Baixe aqui um PDF sobre links do Gustavo Guanabara <strong>&lt;/a&gt;</strong> </code></pre>
+    <strong>Resultado:</strong>
+    <a href="arquivos/Links- Gustavo guanabara.pdf" download="Links- Gustavo guanabara.pdf" type="application/pdf">Baixe aqui um PDF sobre links do Gustavo Guanabara</a>
+    </p>
+    <p>Alguns media types bem usados no nosso dia-dia:
+        <ul><strong>
+            <li>application/zip</li>
+                <li>text/html</li>
+                <li>text/css</li>
+                <li>text/javascript</li>
+                <li>video/mp4</li>
+                <li>video/h264</li>
+                <li>video/jpeg</li>
+                <li>audio/aac</li>
+                <li>audio/mpeg</li>
+                <li>font/ttf</li>
+                <li>image/jpeg</li>
+                <li>image/png</li>
+        </strong>
+        
+        </ul>
+    </p>
+    <hr>
+    <h2>Imagens Flexiveis</h2>
+    <p>Nosso primeiro</p>
+
+
+   
+    <a href="index.html">Página 1</a>
+    
+</body>
+</html>
+

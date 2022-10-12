@@ -1,0 +1,147 @@
+@charset "UTF-8";
+*{
+  margin: 0px;  
+  padding: 0px;   
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+
+}
+
+body{
+  height: 5000px;
+  justify-content: center;
+}
+
+main{ 
+  justify-content: center;
+  padding: 78px 0px;
+}
+
+.barra{
+  height:70px;
+  background-color: white;
+  box-shadow: 1px 1px 5px rgb(172, 172, 172);
+  position: fixed;
+  width: 100%;  
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  letter-spacing: 1px;
+}
+
+.faixas{
+  background-color: rgba(0, 0, 0, 0.568);
+  width: 245px;
+  margin-top:180px;
+
+  border-radius: 0px 0px 10px 10px;
+  font-weight: 700;
+  padding: 10px 10px 10px 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+}
+.logo{
+  font-size: 1.3em;
+  color: rgb(0, 0, 0);
+  padding:15px 22px ;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+  font-weight: bolder; 
+  float: left;
+  position: fixed;
+  
+}
+#carrinho { 
+  float: right;
+  margin-left: 1140px;
+  position: sticky;
+}
+#carrinho:hover{
+  background-color: lightgray;
+}
+
+.caixasopcoes{
+  height: 221px;
+  width: 250px;
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: normal;
+  margin: 6px;
+  font-size: 0.9em;
+}
+
+              /*OPCOES DE PEDIDOS*/
+#promocoes{
+  background-color:#5BB368 ;
+  font-size: 1.5em;
+  font-weight: 590;
+}
+ 
+#esfihas{
+  background-color:#CF4D4D ;
+  font-size: 1.5em;
+  font-weight: 590;
+}
+
+#combos{
+  background-color:#F29422 ;
+  font-size: 1.5em;
+  font-weight: 590;
+}
+#pizzas{
+
+  background-image: url(imagens/download.jpg); 
+
+}
+#pasteis{
+  background-image: url(imagens/pastel.jpg);
+}
+#sanduiches{
+background-image: url(imagens/sanduiche.jpg);
+}
+#beirutes{
+  background-image: url(imagens/beirute.jpg);
+}
+#porcoes{
+  background-image: url(imagens/porcao.jpg);
+}
+#bebidas{
+  background-image: url(imagens/bebidas.jpg);
+}
+
+  /*flexs*/
+.flex1{ 
+  justify-content: center;
+  display: flex;
+  align-items:center;
+  margin-right: 20px;
+}
+.flex2{
+  
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  margin-right: 20px;
+}
+.flex3{
+  
+  display: flex;
+  justify-content: center;
+  align-items:stretch;
+  margin-right: 20px;
+}   
+.flex4{
+  justify-content: center;
+  display: flex;
+  align-items: stretch;
+  margin-right: 20px;
+}
+.flex5{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+  
+
